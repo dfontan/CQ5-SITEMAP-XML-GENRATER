@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Button"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        title="Sitemap"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <sitemap
+                jcr:primaryType="cq:Widget"
+                title="Sitemap"
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <level
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Max level for child nodes"
+                        name="./level"
+                        xtype="numberfield"/>
+                    <hideChangeFreq
+			            jcr:primaryType="nt:unstructured"
+			            fieldLabel="Change Frequency will not be displayed in sitemap.xml"
+			            name="./hideChangeFreq"
+			            type="checkbox"
+			            xtype="selection"/>
+			        <hidePriority
+			            jcr:primaryType="nt:unstructured"
+			            fieldLabel="Priority will not be displayed in sitemap.xml"
+			            name="./hidePriority"
+			            type="checkbox"
+			            xtype="selection"/>
+			        <defaultPriority
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Default Priority"
+                        name="./defaultPriority"
+                        type="select"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                           <zero
+                               jcr:primaryType="nt:unstructured"
+                               text="0.0"
+                               value="0.0"/>
+                           <pone
+                               jcr:primaryType="nt:unstructured"
+                               text="0.1"
+                               value="0.1"/>
+                           <ptwo
+                               jcr:primaryType="nt:unstructured"
+                               text="0.2"
+                               value="0.2"/>
+                           <pthree
+                               jcr:primaryType="nt:unstructured"
+                               text="0.3"
+                               value="0.3"/>
+                           <pfour
+                               jcr:primaryType="nt:unstructured"
+                               text="0.4"
+                               value="0.4"/>
+                           <pfive
+                               jcr:primaryType="nt:unstructured"
+                               text="0.5"
+                               value="0.5"/>
+                           <psix
+                               jcr:primaryType="nt:unstructured"
+                               text="0.6"
+                               value="0.6"/>
+                           <pseven
+                               jcr:primaryType="nt:unstructured"
+                               text="0.7"
+                               value="0.7"/>
+                           <peight
+                               jcr:primaryType="nt:unstructured"
+                               text="0.8"
+                               value="0.8"/>
+                           <pnine
+                               jcr:primaryType="nt:unstructured"
+                               text="0.9"
+                               value="0.9"/>
+                           <one
+                               jcr:primaryType="nt:unstructured"
+                               text="1.0"
+                               value="1.0"/>
+                        </options>
+                    </defaultPriority>
+                 	<defaultChangeFreq
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Default Change Frequency"
+                        name="./defaultChangeFreq"
+                        type="select"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                           <always
+                               jcr:primaryType="nt:unstructured"
+                               text="always"
+                               value="always"/>
+                           <hourly
+                               jcr:primaryType="nt:unstructured"
+                               text="hourly"
+                               value="hourly"/>
+                           <daily
+                               jcr:primaryType="nt:unstructured"
+                               text="daily"
+                               value="daily"/>
+                           <weekly
+                                jcr:primaryType="nt:unstructured"
+                                text="weekly"
+                                value="weekly"/>
+                           <monthly
+                                jcr:primaryType="nt:unstructured"
+                                text="monthly"
+                                value="monthly"/>
+                           <yearly
+                                jcr:primaryType="nt:unstructured"
+                                text="yearly"
+                                value="yearly"/>
+                        </options>
+                    </defaultChangeFreq>
+                </items>
+            </sitemap>
+        </items>
+    </items>
+</jcr:root>
